@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Materialize - Compiled and minified CSS-->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
+
+    <!-- Font Awesome Icon - CSS-->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+
+    <!-- Custom Styles-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://monimsyed.github.io" />
+
+    <meta name="msvalidate.01" content="E5613F359D1B1F327FC1B43F9D027BC5" />
+    <title>Syed Samiul Islam | Back-End Developer</title>
+    <meta name="description" content="As a web developer, I enjoy using my obsessive attention to detail and my unequivocal love for making things to literally change the world." />
+
+    <!-- Open Graph-->
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Syed Samiul Islam | Back-End Developer" />
+    <meta property="og:description" content="Necessity is the mother of invention." />
+    <meta property="og:url" content="https://monimsyed.github.io" />
+    <meta property="og:site_name" content="Syed Samiul Islam | Back-End Developer" />
+    <meta property="article:publisher" content="monimsyed.github.io" />
+    <meta property="og:image" content="https://monimsyed.github.io/assets/img/andrew-borstein-2a.jpg" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@monim_syed" />
+    <meta name="twitter:title" content="Syed Samiul Islam | Back-End Developer" />
+    <meta name="twitter:description" content="Necessity is the mother of invention." />
+    <meta name="twitter:url" content="@monim_syed" />
+    <meta name="twitter:image" content="https://monimsyed.github.io/assets/img/andrew-borstein-2a.jpg" />
+
+    <meta name="author" content="Syed Samiul Islam" />
+    <meta name="keywords" content="monim, syed, samiul, html, css, bootstrap, javascript, jquery, ajax, php, c, c++, laravel, codeigniter, w3.css, react, node, mysql, json, api, programming, developer, engineer, programmer" />
+
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicon/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicon/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicon/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicon/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicon/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicon/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicon/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicon/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-icon-180x180.png" />
+
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png" />
+
+    <link rel="manifest" href="assets/img/favicon/manifest.json" />
+
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="assets/img/favicon/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <!--if lt IE 9script(src='//html5shim.googlecode.com/svn/trunk/html5.js')-->
+    <meta name="robots" content="index, follow" />
+    <meta name="google-site-verification" content="6C1npsw00eXLSszGCdJ9DIIev3JHeQ2mIcZxPhC9njQ" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156466290-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-156466290-1');
+    </script>
+
+  </head>
+
+  <body>
+    <!-- Navigation Menu-->
+    <nav class="hide-on-small-only">
+      <ul class="side-nav fixed section table-of-contents">
+        <li class="logo">
+          <a id="logo-container" title="Navigate to the beginning of the page" href="#intro" class="brand-logo teal-text">
+            <h1>Syed Samiul Islam<span class="brown-text light">Back-End Developer</span></h1>
+          </a>
+        </li>
+        <li class="bold">
+          <a title="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text">
+            <i class="mdi-social-person small"></i><span>About</span>
+          </a>
+        </li>
+<!--         <li class="bold">
+          <a
+            aria-label="Navigate to the Experience section"
+            href="#experience"
+            class="waves-effect waves-dark cyan-text"
+            ><i class="mdi-action-trending-up small"></i
+            ><span>Experience</span></a
+          >
+        </li> -->
+        <li class="bold">
+          <a title="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark indigo-text">
+            <i class="mdi-av-web small"></i><span>Projects</span>
+          </a>
+        </li>
+        <li class="bold">
+          <a title="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark purple-text">
+            <i class="mdi-av-equalizer small"></i><span>Skills</span>
+          </a>
+        </li>
+    <!-- <li class="bold">
+          <a
+            aria-label="Navigate to the Awards section"
+            href="#awards"
+            class="waves-effect waves-dark red-text"
+            ><i class="mdi-action-grade small"></i><span>Awards</span></a
+          >
+        </li> -->
+        <li class="bold">
+          <a title="Navigate to the Education section" href="#education" class="waves-effect waves-dark orange-text">
+            <i class="mdi-social-school small"></i><span>Education</span>
+          </a>
+        </li>
+        <li class="bold">
+          <a title="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark brown-text">
+            <i class="mdi-content-mail small"></i><span>Contact</span>
+          </a>
+        </li>
+        <li class="bold">
+          <a title="Navigate to the Blog section" href="#blog" class="waves-effect waves-dark yellow-text text-darken-2">
+            <i class="mdi-content-create small"></i><span>Blog</span>
+          </a>
+        </li>
+        <li class="bold">
+          <a title="Open Samiul's resume in a new tab" href="#" target="_blank" class="waves-effect waves-dark grey-text text-darken-3">
+            <i class="mdi-action-description small"></i><span>Resume</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <nav class="hide-on-large only trigger z-depth-1">
+      <a title="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out" class="button-collapse">
+        <i class="mdi-navigation-menu"></i>
+      </a>
+      <div class="name-title">
+        <a id="name" title="Navigate to the beginning of the page" href="#intro" class="teal-text">Syed Samiul Islam</a>
+        <span class="brown-text light">Back-End Developer</span>
+      </div>
+    </nav>
+
+    <nav class="hide-on-large only">
+      <ul id="slide-out" class="side-nav">
+        <li class="bold">
+          <a title="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text">
+            <i class="mdi-social-person small"></i><span>About</span>
+          </a>
+        </li>
+<!--         <li class="bold">
+          <a
+            aria-label="Navigate to the Experience section"
+            href="#experience"
+            class="waves-effect waves-dark cyan-text"
+            ><i class="mdi-action-trending-up small"></i
+            ><span>Experience</span></a
+          >
+        </li> -->
+        <li class="bold">
+          <a title="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark indigo-text">
+            <i class="mdi-av-web small"></i><span>Projects</span>
+          </a>
+        </li>
+        <li class="bold">
+          <a title="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark purple-text">
+            <i class="mdi-av-equalizer small"></i><span>Skills</span>
+          </a>
+        </li>
+<!--         <li class="bold">
+          <a
+            aria-label="Navigate to the Awards section"
+            href="#awards"
+            class="waves-effect waves-dark red-text"
+            ><i class="mdi-action-grade small"></i><span>Awards</span></a
+          >
+        </li> -->
+        <li class="bold">
+          <a title="Navigate to the Education section" href="#education" class="waves-effect waves-dark orange-text">
+            <i class="mdi-social-school small"></i><span>Education</span>
+          </a>
+        </li>
+        <li class="bold">
+          <a title="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark brown-text">
+            <i class="mdi-content-mail small"></i><span>Contact</span>
+          </a>
+        </li>
+        <li class="bold">
+          <a title="Navigate to the Contact section" href="#blog" class="waves-effect waves-dark yellow-text text-dark-3">
+            <i class="mdi-content-mail small"></i><span>Blog</span>
+          </a>
+        </li>
+        <li class="bold">
+          <a title="Open Samiul's Resume in a new tab" href="#" target="_blank" class="waves-effect waves-dark grey-text text-darken-3">
+            <i class="mdi-action-description small"></i><span>Resume</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Main Content-->
+    <main>
+
+      <section id="intro" class="section scrollspy full-height">
+        <div class="overlay"></div>
+        <div class="container">
+          <h2>
+            Necessity is the<span class="teal">mother of invention.</span><br />
+            <!-- <span class="underline">make a difference</span>. -->
+          </h2>
+        </div>
+      </section>
+
+      <section id="about" class="section scrollspy">
+        <h3 class="page-title white-text teal">About</h3>
+        <div class="container flow-text">
+          <blockquote>
+            <h2>
+              Mission-driven back end developer with a passion for thoughtful
+              development, collaboration, and teaching.
+            </h2>
+          </blockquote>
+          <p>
+            From: <strong>Bangladesh</strong> | Lives in: <strong>Rajshahi, Bangladesh</strong>
+          </p>
+          <p>
+            As a web developer, I enjoy using my obsessive attention to detail,
+            my unequivocal love for making things, and my mission-driven work
+            ethic to literally change the world. That's why I’m excited to make
+            a big impact at a high growth company.
+          </p>
+          <p>
+            <strong>Current Focus</strong>:&nbsp;
+            <a title="Navigate to the Data Structures & Algorithms homepage" href="#">
+              Data Structures & Algorithms
+            </a>&nbsp;//&nbsp;
+            <a title="Navigate to the React JS homepage" href="#">
+              React JS
+            </a>&nbsp;//&nbsp;
+            <a title="Navigate to Node JS homepage" href="#">
+              Node JS
+            </a>
+          </p>
+        </div>
+      </section>
+
+<!--       <section id="experience" class="section scrollspy">
+        <h3 class="page-title white-text teal">Experience</h3>
+        <div class="container">
+          <div class="card">
+            <div class="card-content">
+              <div class="row">
+                <div class="col s12 m2">
+                  <a href="http://wespire.com" target="_blank"
+                    ><img
+                      alt="WeSpire logo"
+                      src="/assets/img/wespire-logo.jpg"
+                      class="responsive-img center-block"
+                  /></a>
+                </div>
+                <div class="col s12 m10">
+                  <p>
+                    <span class="card-title"
+                      ><a
+                        href="http://wespire.com"
+                        target="_blank"
+                        class="teal-text hoverline"
+                        >Wespire</a
+                      ></span
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="role brown-text">Full-Stack Software Developer</div>
+              <p>
+                <em class="grey-text"
+                  >SaaS platform that enables enterprise companies to build,
+                  run, and measure their positive impact campaigns</em
+                >
+              </p>
+              <h6>Develop Product</h6>
+              <ul>
+                <li>
+                  Contribute core features across entire stack (20k+ lines of
+                  code, 250+ pulls)
+                </li>
+                <li>
+                  Lead front-end development, creating and documenting app-wide
+                  design system
+                </li>
+                <li>
+                  Oversee transition from page-based styles to modular component
+                  styles
+                </li>
+                <li>Guide best practices around accessible, semantic UI/UX</li>
+                <li>
+                  Tools: Ruby, Rails, PostgreSQL // React, JS, jQuery // Sass //
+                  HTML, JSX, Haml
+                </li>
+              </ul>
+              <h6>Accomplishments</h6>
+              <ul>
+                <li>
+                  Dramatically increased speed of UI development using atomic,
+                  scalable CSS
+                </li>
+                <li>
+                  Built tool to convert HRIS data into user accounts to simplify
+                  onboarding
+                </li>
+                <li>
+                  Implemented inline @tagging feature to increase app
+                  share-ability
+                </li>
+              </ul>
+            </div>
+            <div class="card-action">
+              <span>Jan 2016 - Present | Boston, MA</span>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <section id="projects" class="section scrollspy">
+        <h3 class="page-title white-text teal">Projects</h3>
+        <div class="container">
+          <div class="row">
+            <!-- Chatting app-->
+            <div class="col s12 m6 l4">
+              <div class="card medium">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img alt="Screenshot of chatting app" src="assets/img/chat.png" class="activator"/>
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator teal-text hoverline">
+                    Chatting App<i class="mdi-navigation-more-vert right"></i>
+                  </span>
+                  <p>A simple real time chatting app with basic functionalities.</p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title brown-text">
+                    Details<i class="mdi-navigation-close right"></i>
+                  </span>
+                  <ul>
+                    <li><strong>PHP & MySQL</strong> backend</li>
+                    <li><strong>CSS & Bootstrap</strong> frontend</li>
+                    <li><strong>Message notification, Online-Offline status, Typing notification</strong></li>
+                    <li><strong>Auto load messages</strong></li>
+                  </ul>
+                  <div class="card-action">
+                    <a
+                      title="Visit chatting app online"
+                      href="#"
+                      target="_blank"
+                      data-position="top"
+                      data-tooltip="View Online"
+                      class="btn-floating btn-large waves-effect waves-light brown tooltipped"
+                      ><i class="fa fa-external-link"></i>
+                    </a>
+                    <a
+                      title="Visit the GitHub repo for chatting app project"
+                      href="https://github.com/monim003/real_time_chat_app"
+                      target="_blank"
+                      data-position="top"
+                      data-tooltip="View Source"
+                      class="btn-floating btn-large waves-effect waves-light brown tooltipped"
+                      ><i class="fa fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- E-commerce ci-->
+            <div class="col s12 m6 l4">
+              <div class="card medium">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img
+                    alt="Screenshot of E-commerce CI"
+                    src="assets/img/ecommerce_ci.png"
+                    class="activator"
+                  />
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator teal-text hoverline"
+                    >E-commerce<i class="mdi-navigation-more-vert right"></i
+                  ></span>
+                  <p>
+                    E-commerce site with basic functionalities.
+                  </p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title brown-text"
+                    >Details<i class="mdi-navigation-close right"></i
+                  ></span>
+                  <ul>
+                    <li><strong>CodeIgniter & MySQL</strong> backend</li>
+                    <li><strong>Bootshop template</strong> frontend</li>
+                    <li>User login via <strong>AJAX</strong></li>
+                    <li>Implemented <strong>cart functionality</strong></li>
+                    <li><strong>Search by product name or Category</strong></li>
+                  </ul>
+                  <div class="card-action">
+                    <a
+                      title="Visit E-commerce website"
+                      href="https://kenakata03.000webhostapp.com/"
+                      target="_blank"
+                      data-position="top"
+                      data-tooltip="View Online"
+                      class="btn-floating btn-large waves-effect waves-light brown tooltipped"
+                      ><i class="fa fa-external-link"></i></a
+                    ><a
+                      title="Visit the GitHub repo for E-commerce project"
+                      href=""
+                      target="_blank"
+                      data-position="top"
+                      data-tooltip="View Source"
+                      class="btn-floating btn-large waves-effect waves-light brown tooltipped"
+                      ><i class="fa fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- eshopper laravel-->
+            <div class="col s12 m6 l4">
+              <div class="card medium">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img
+                    alt="Eshopper"
+                    src="assets/img/eshopper.jpg"
+                    class="activator"
+                  />
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator teal-text hoverline"
+                    >E-shopper<i
+                      class="mdi-navigation-more-vert right"
+                    ></i
+                  ></span>
+                  <p>
+                    E-commerce with laravel.
+                  </p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title brown-text"
+                    >Details<i class="mdi-navigation-close right"></i
+                  ></span>
+                  <ul>
+                    <li>Built with <strong>Laravel</strong></li>
+                    <li>Implemented <strong>Shopping Cart</strong></li>
+                    <li>Template from <strong>Themum</strong></li>
+                    <li><strong>User friendly</strong> admin dashboard</li>
+                  </ul>
+                  <div class="card-action">
+                    <a
+                      title="Visit Eshopper web app"
+                      href="#"
+                      target="_blank"
+                      data-position="top"
+                      data-tooltip="View Online"
+                      class="btn-floating btn-large waves-effect waves-light brown tooltipped"
+                      ><i class="fa fa-external-link"></i></a
+                    ><a
+                      title="Visit the GitHub repo for E-shopper"
+                      href="https://github.com/monim003/e_shopper"
+                      target="_blank"
+                      data-position="top"
+                      data-tooltip="View Source"
+                      class="btn-floating btn-large waves-effect waves-light brown tooltipped"
+                      ><i class="fa fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <!--  Macebook -->
+          <div class="col s12 m6 l4">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img
+                  alt="Social media"
+                  src="assets/img/social.jpg"
+                  class="activator"
+                />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline"
+                  >Macebook<i
+                    class="mdi-navigation-more-vert right"
+                  ></i
+                ></span>
+                <p>
+                  Social media site with basic functionalities.
+                </p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title brown-text"
+                  >Details<i class="mdi-navigation-close right"></i
+                ></span>
+                <ul>
+                  <li>Built with <strong>PHP, MySQL, jQuery & AJAX</strong></li>
+                  <li>Implemented <strong>User login, registration.</strong></li>
+                  <li>Template from <strong>w3.css</strong></li>
+                  <li>User can send <strong>friend requests,</strong> <strong>like & comment posts,</strong> <strong>view user profile,</strong> <strong>get notifications.</strong> </li>
+                </ul>
+                <div class="card-action">
+                  <a
+                    title="Visit Macebook Online"
+                    href="#"
+                    target="_blank"
+                    data-position="top"
+                    data-tooltip="View Online"
+                    class="btn-floating btn-large waves-effect waves-light brown tooltipped"
+                    ><i class="fa fa-external-link"></i></a
+                  ><a
+                    title="Visit the GitHub repo for Macebook"
+                    href="https://github.com/monim003/macebook"
+                    target="_blank"
+                    data-position="top"
+                    data-tooltip="View Source"
+                    class="btn-floating btn-large waves-effect waves-light brown tooltipped"
+                    ><i class="fa fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- another -->
+          </div>
+        </div>
+      </section>
+      <section id="skills" class="section scrollspy">
+        <h3 class="page-title white-text teal">Skills</h3>
+        <div class="container">
+          <div class="card">
+            <div class="card-content">
+              <h4 class="brown-text light">HTML</h4>
+              <div class="row text-center">
+
+                <div class="col s4 m2">
+                  <img alt="html5" src="assets/img/html5.png" class="responsive-img"/>HTML5
+                </div>
+
+                <div class="col s4 m2">
+                  <img alt="jsx" src="assets/img/react.png" class="responsive-img"/>JSX
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <h4 class="brown-text light">CSS</h4>
+              <div class="row text-center">
+
+                <div class="col s4 m2">
+                  <img alt="css" src="assets/img/css3.png" class="responsive-img"/>CSS3
+                </div>
+
+                <div class="col s4 m2">
+                  <img alt="bootstrap" src="assets/img/bootstrap.png" class="responsive-img"/>Bootstrap
+                </div>
+
+                <div class="col s4 m2">
+                  <img alt="w3css" src="assets/img/w3css.png" class="responsive-img"/>W3.CSS
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <h4 class="brown-text light">Javascript</h4>
+              <div class="row text-center">
+
+                <div class="col s4 m2">
+                  <img alt="reactjs" src="assets/img/react.png" class="responsive-img"/>React
+                </div>
+
+                <div class="col s4 m2">
+                  <img alt="javascript" src="assets/img/javascript.png" class="responsive-img"/>Javascript
+                </div>
+
+                <div class="col s4 m2">
+                  <img alt="jquery" src="assets/img/jquery.png" class="responsive-img"/>jQuery
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <h4 class="brown-text light">Back-End</h4>
+              <div class="row text-center">
+
+                <div class="col s4 m2">
+                  <img alt="php" src="assets/img/php.png" class="responsive-img"/>PHP
+                </div>
+
+                <div class="col s4 m2">
+                  <img alt="mysql" src="assets/img/mysql.png" class="responsive-img"/>MySQL
+                </div>
+
+                <div class="col s4 m2">
+                  <img alt="codeigniter" src="assets/img/codeigniter.png" class="responsive-img"/>CodeIgniter
+                </div>
+
+                <div class="col s4 m2">
+                  <img alt="laravel" src="assets/img/laravel.png" class="responsive-img"/>Laravel
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <h4 class="brown-text light">Others</h4>
+              <div class="row text-center">
+                <div class="col s4 m2">
+                  <img alt="ajax" src="assets/img/ajax.jpg" class="responsive-img"/>AJAX
+                </div>
+
+                <div class="col s4 m2">
+                  <img alt="c" src="assets/img/c.png" class="responsive-img"/>C/C++
+                </div>
+
+                <div class="col s4 m2">
+                  <img alt="json" src="assets/img/json.png" class="responsive-img"/>JSON
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+<!--       <section id="awards" class="section scrollspy">
+        <h3 class="page-title white-text teal">Awards</h3>
+        <div class="container">
+          <div class="row">
+            <div class="col s12 m6">
+              <div class="card">
+                <div class="card-content">
+                  <p>
+                    <span class="card-title"
+                      ><a
+                        href="http://startupinstitute.com"
+                        target="_blank"
+                        class="teal-text hoverline"
+                        >Student Choice Award</a
+                      ></span
+                    >
+                  </p>
+                  <p class="brown-text">
+                    Startup Institute - Full Time Web Development | April 2017
+                  </p>
+                  <ul>
+                    <li>
+                      Awarded by students in the Full-Time Web Development track
+                      to one instructor as recognition for "outstanding
+                      teaching, listening, mentoring."
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m6">
+              <div class="card">
+                <div class="card-content">
+                  <p>
+                    <span class="card-title"
+                      ><a
+                        href="https://wespire.com"
+                        target="_blank"
+                        class="teal-text hoverline"
+                        >Inspired By You Award</a
+                      ></span
+                    >
+                  </p>
+                  <p class="brown-text">WeSpire | June 2016</p>
+                  <ul>
+                    <li>
+                      Quarterly award given to a team member who exemplifies
+                      WeSpire's purpose, vision, and values, goes above and
+                      beyond in their role to make a particularly positive
+                      impact on the company.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <section id="education" class="section scrollspy">
+        <h3 class="page-title white-text teal">Education</h3>
+        <div class="container">
+          <div class="row">
+            <div class="col s12 m6">
+              <div class="card">
+                <div class="card-content">
+                  <p>
+                    <span class="card-title">
+                      <a title="View MBSTU" href="https://mbstu.ac.bd/" class="teal-text hoverline">
+                        Mawlana Bhashani Science and Technology University
+                      </a>
+                    </span>
+                  </p>
+                  <p class="brown-text">Santosh, Tangail</p>
+                  <ul>
+                    <li>B.Sc Engineering in Computer Science & Engineering</li>
+                    <li>2014 - 2019</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m6">
+              <div class="card">
+                <div class="card-content">
+                  <p>
+                    <span class="card-title">
+                      <a title="View Rajshahi College" href="#" class="teal-text hoverline">
+                        Rajshahi College
+                      </a>
+                    </span>
+                  </p>
+                  <p class="brown-text">Rajshahi</p>
+                  <ul>
+                    <li>HSC in Science</li>
+                    <li>2011 - 2012</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12 m6">
+              <div class="card">
+                <div class="card-content">
+                  <p>
+                    <span class="card-title">
+                      <a title="View Collegiate School" href="http://rcs.edu.bd/" class="teal-text hoverline">
+                        Rajshahi Collegiate School
+                      </a>
+                    </span>
+                  </p>
+                  <p class="brown-text">Rajshahi</p>
+                  <ul>
+                    <li>SSC in Science</li>
+                    <li>2003 - 2010</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section scrollspy full-height">
+        <h3 class="page-title white-text teal">Contact</h3>
+        <div class="container">
+          <p>
+            <a title="Email Samiul" href="mailto:ssi.monim@gmail.com" data-position="top" data-tooltip="Email Samiul" class="btn-floating btn-large waves-effect waves-light brown tooltipped">
+
+              <i class="fa fa-envelope"></i>
+            </a>
+            <a title="Email Samiul" href="mailto:ssi.monim@gmail.com" class="hoverline">ssi.monim@gmail.com</a>
+          </p>
+
+          <p>
+            <a title="View Samiul on GitHub" href="https://github.com/monimsyed" target="_blank" data-position="top" data-tooltip="View Samiul on GitHub" class="btn-floating btn-large waves-effect waves-light brown tooltipped">
+
+              <i class="fa fa-github"></i>
+            </a>
+            <a title="View Samiul on GitHub" href="https://github.com/monimsyed" class="hoverline">github.com/monimsyed</a>
+          </p>
+
+          <p>
+            <a title="View Samiul on LinkedIn" href="https://linkedin.com/in/si129" target="_blank" data-position="top" data-tooltip="View Samiul on LinkedIn" class="btn-floating btn-large waves-effect waves-light brown tooltipped">
+
+              <i class="fa fa-linkedin"></i>
+            </a>
+            <a title="View Samiul on LinkedIn" href="https://linkedin.com/in/si129" class="hoverline">linkedin.com/in/si129</a>
+          </p>
+        </div>
+      </section>
+
+      <section id="blog" class="section scrollspy full-height">
+        <h3 class="page-title white-text teal">Blog</h3>
+        <div class="container">
+          <h4 id="posts-2019">2020</h4>
+          <ul aria-labelledby="posts-2020">
+            <li>
+              <a class="hoverline" title="Read Basic OOP Concepts" href="/blog/oop1">Basic OOP Concepts.</a>
+              <dl>
+                <dt>Published:</dt>
+                <dd>
+                  <time datetime="2020-01-13T00:00:00+00:00">
+                    January 13, 2020
+                  </time>
+                </dd>
+              </dl>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-title white-text teal">
+        <div id="foot">
+          #2020
+        </div>
+    </footer>
+
+    <!-- jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <!-- Materialize - Compiled and minified JavaScript-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+    <script>
+      // Materialize - Initializers
+      $(document).ready(function() {
+        $(".scrollspy").scrollSpy()
+        // Initialize collapse button
+        $(".button-collapse").sideNav({
+          menuWidth: 190, // Default is 240
+          edge: "left", // Choose the horizontal origin
+          closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+        })
+      })
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org/",
+        "@type": "Person",
+        "name": "Syed Samiul Islam",
+        "url": "https://monimsyed.github.io/",
+        "image": "https://monimsyed.github.io/assets/monim.jpg",
+        "sameAs": [
+          "https://www.facebook.com/si129",
+          "https://github.com/monimsyed",
+          "https://twitter.com/monim_syed",
+          "https://www.linkedin.com/in/si129",
+          "https://www.instagram.com/ssi.monim/"
+        ]
+      }
+    </script>
+
+  </body>
+</html>
