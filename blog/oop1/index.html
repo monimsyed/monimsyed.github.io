@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Materialize - Compiled and minified CSS-->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
+    <!-- Font Awesome Icon - CSS-->
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+
+    <title>OOP Concepts</title>
+
+    <!-- Open Graph-->
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Syed Samiul Islam | Back End Developer" />
+    <meta property="og:description" content="I want to make things that make a difference." />
+    <meta property="og:url" content="monim003.github.io" />
+    <meta property="og:site_name" content="Syed Samiul Islam | Back End Developer" />
+    <meta property="article:publisher" content="monim003.github.io" />
+    <meta property="og:image" content="" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@monim_syed" />
+    <meta name="twitter:title" content="Syed Samiul Islam | Back End Developer" />
+    <meta name="twitter:description" content="I want to make things that make a difference." />
+    <meta name="twitter:url" content="monim003.github.io" />
+
+    <meta name="author" content="Syed Samiul Islam" />
+    <meta name="description" content="I want to make things that make a difference." />
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicon/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicon/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicon/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicon/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicon/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicon/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-icon-180x180.png" />
+
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png" />
+
+    <link rel="manifest" href="/assets/img/favicon/manifest.json" />
+
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/assets/img/favicon/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <!--if lt IE 9script(src='//html5shim.googlecode.com/svn/trunk/html5.js')
+    -->
+    <meta name="robots" content="index, follow" />
+    <!-- Custom Styles-->
+    <style>
+      /* Blog Styles */
+      body {
+        color: #333;
+        font-size: 16px;
+      }
+      a {
+        color: #009688;
+      }
+      blockquote {
+        border-left: 5px solid #795548;
+        color: #795548;
+        font-size: 125%;
+        font-weight: 400;
+        margin: 20px 0;
+        padding-left: 1.5rem;
+      }
+      blockquote * {
+        font-size: inherit;
+        line-height: inherit;
+      }
+      .text-center {
+        text-align: center;
+      }
+      nav {
+        background: white;
+        box-shadow: none;
+        height: 0;
+      }
+      nav i {
+        padding: 0 15px;
+        position: relative;
+        top: 5px;
+      }
+      main {
+        background: url(/assets/img/bg.png) repeat;
+      }
+      article {
+        max-width: 85ch;
+        margin: 0 auto;
+        padding: 2rem;
+        font-size: 100%;
+        line-height: 1.6;
+      }
+      @media (min-width: 30rem) {
+        article {
+          font-size: 120%;
+        }
+      }
+      h1 {
+        font-size: 3rem;
+        font-weight: 300;
+        letter-spacing: 0.2rem;
+        line-height: 1;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+      }
+      @media (min-width: 30rem) {
+        h1 {
+          font-size: 5rem;
+        }
+      }
+      h2 {
+        font-size: 3rem;
+        line-height: 1.3;
+      }
+      h3 {
+        font-size: 2rem;
+        line-height: 1.3;
+      }
+      hr {
+        margin: 4rem 0;
+      }
+      ul {
+        padding-left: 1em;
+      }
+      ul li {
+        list-style-type: initial;
+      }
+      p a {
+        text-decoration: underline;
+      }
+      dl {
+        color: #666;
+        margin-bottom: 3rem;
+        margin-top: 0.5rem;
+      }
+      dd {
+        display: inline-block;
+        font-weight: 500;
+        margin-left: 0;
+      }
+      dt {
+        display: inline-block;
+        margin-left: 0.5rem;
+      }
+      .back-to-index {
+        align-content: center;
+        display: flex;
+        font-size: 1rem;
+        letter-spacing: 0.25rem;
+        padding: 2rem 3rem;
+        text-transform: uppercase;
+      }
+      .back-to-index i {
+        margin-right: 0.5rem;
+      }
+      dl {
+        margin-top: 0.5rem;
+      }
+      dd {
+        display: inline-block;
+        font-weight: 500;
+        margin-left: 0;
+      }
+      dt {
+        display: inline-block;
+        margin-left: 0.5rem;
+      }
+    </style>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156466290-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-156466290-1');
+    </script>
+
+  </head>
+  <body>
+    <a class="back-to-index" href="/#blog"
+      ><i class="mdi-hardware-keyboard-arrow-left"></i>Back to blog index</a
+    >
+    <!-- Main Content-->
+    <main>
+      <article>
+        <h1>Basic Concepts of Object Oriented Programming (OOP)</h1>
+        <dl>
+          <dd>Published:</span>
+          <dt>
+            <time datetime="2020-01-13T00:00:00+00:00">
+              January 13, 2020
+            </time>
+          </dt>
+        </dl>
+        <!-- <h2 id="tl-dr-">tl: dr;</h2> -->
+        <p>
+          Hello everyone! This is my first blog. The reason behind this, is because I wanted people to learn their basic things very easily. I know that this blog isn't too much for experts but I am sure it will be very helpful for beginners. Because there are like millions of tutorials or blogs for this topic. But I didn't find one that explains these concepts which helps people summarizing and visualizing the whole thing easily. This is why I wanted to help. So what are we waiting for ! Let's get on with it.
+        </p>
+        <hr />
+        <p>
+          Before discussing about Object Oriented Programming We have to know what is Procedural Programming. Procedural Programming (For example: C) focuses on functions. But what is a function ?<br><br>First of all a program is a set of instructions for carrying out a specific task.<br><br> But a function is also a set of instructions for carrying out a specific task.<br><br>So what's the difference ?<br><br> Difference between A Program and A function is that the function is smaller unit or a block of code which can be reused within in A program.
+        </p>
+        <hr />
+        <p>
+          Now that we have learned what Procedural Programming is, let us discuss what is Object Oriented Programming (OOP).<br><br>In a sentence OOP is a programming paradigm that focuses on objects (Remember, Procedural Programming focuses on functions !!!). There are 4 pillars or core concepts of OOP. They are Abstraction, Inheritance, Encapsulation, Polymorphism. These concepts directly or indirectly related to Classes and Objects. So firstly we have to learn these two.
+        </p>
+        <hr />
+        <p>
+           So what are objects ?<br><br>Objects are real life entity which has some properties and behaviors. These properties called variables and behaviors are called functions !<br><br>So basically by with Object Oriented Programming it is so much easier to represent a real life entity. For example: A man named "John" is an object, whose color is white and height is 1.75 meter. Here color and height are properties of John with values "white" and "1.75 meter". Let's say he can cook. So cooking is his one behavior. So we can see that by OOP it is easier to represent everything !
+        </p>
+        <hr />
+        <p>
+          Now if we want to define Classes, In a sentence, Classes are blueprints from where we can create that type of objects.<br><br>In our previous example, we said "A man named 'John' ". Consider 'Man' here is a Class. 'Man' has color, height, age etc. 'Man' can have different behaviors. Example above 'John' is a man who can 'Cook'. It's John's behavior.<br><br> Don't be confused! We can create many objects from a Class. Let's say we have another Object of 'Man' class named 'Bob'. Bob's color is black. Height is 1.75 meter. He can ride bikes. So 'Riding' is Bob's behavior.<br><br> Look at the example of class and object below !!!
+          <img src="/blog/oop1/co.png" alt="class and object example" style="width:100%; height:auto;">
+        </p>
+        <!-- <h2 id="blogging-goals">Blogging Goals</h2>
+        <h3 id="1-contribute-to-the-web-dev-community">
+          1. Contribute to the Web Dev Community
+        </h3>
+        <p>
+          I'd like to be an active participant of the wide and wonderful world
+          of web dev, not just a passive consumer. If it's possible for me to
+          write some thing that one stranger on the internet finds useful, I'll
+          have knocked this goal out of the park. I know I'm setting the bar
+          pretty low, but hey, baby steps!
+        </p>
+        <p>
+          If I had to venture a guess, I'd say that right now
+
+          <a
+            href="https://codeburst.io/10-awesome-web-developer-portfolios-d266b32e6154"
+            >I'm most well known for having a neat portfolio website</a
+          >. Don't get me wrong, it's totally cool having any kind of
+          recognition for your work. But I made this portfolio site over one
+          weekend in 2015 while attending
+          <a href="https://www.startupinstitute.com/">Startup Institute</a>, and
+          I totally cribbed the initial design inspiration from a website I
+          found in the "Showcase" section of the
+          <a href="https://materializecss.com/showcase.html"
+            >MaterializeCSS docs </a
+          >. I never got to say thanks, <a href="http://joelcox.io/">Joel</a>.
+          So, thanks!
+        </p>
+        <p>
+          So yeah I'd like to have a more interesting and meaningful impact, and
+          that's a big part of why I want to start writing.
+        </p>
+        <h3 id="2-enhance-and-document-my-learning">
+          2. Enhance and Document My Learning
+        </h3>
+        <p>
+          I've learned so, so much in the last <del>8</del> 9 years (I just had
+          to look up the exact date on my resume, I must be old). How much of it
+          do you think I've written down? Survey says, not nearly enough!
+        </p>
+        <p>
+          Case in point, we started using Redux at work about 6 months ago,
+          implemented in a few places, and then everyone on the team basically
+          forgot about it. We found a new use-case for it last week, but it all
+          looks like gibberish to me. If you don't use it, you lose it, obvi. So
+          when I inevitably lose it, hopefully I'll at least be able to
+          <em>peruse</em> it in my copious, sometimes public notes aka "blogs."
+          And then, you know, put it back into use!
+        </p>
+        <p>
+          I've also found that teaching is one of the single best ways to learn
+          something new. It can help solidify a familiar practice, iron out the
+          nitty gritty details of something you only know at a surface level,
+          and it can reveal quirks that you would have otherwise never
+          encountered. Maybe I haven't yet mentioned it, but I also love
+          teaching, and I've done a fair amount of it. So when I can't be
+          teaching or mentoring regularly IRL, I can use this as another outlet
+          to document my learnings so that both present day me and future me can
+          better utilize that knowledge.
+        </p>
+        <h3 id="3-communicate-with-future-teammates-or-employers">
+          3. Communicate with Future Teammates or Employers
+        </h3>
+        <p>
+          Crazy, right? Using this blog I can literally talk with people I don't
+          know yet... from the <em>future</em>.
+        </p>
+        <blockquote>
+          <p><strong>Woah.</strong></p>
+        </blockquote>
+        <p><i>- Keanu Reeves</i></p>
+        <p>
+          In point #1 my audience is unknown, random folks hoping to solve a
+          specific problem or learn something new. In #2 the audience is me. And
+          in #3, my audience is people I may one day have the pleasure of
+          working with. It's important to me (and hopefully to them, too) that
+          we understand each other as well as possible, and I don't feel like
+          the standard tech interview process always succeeds at accomplishing
+          that. Sometimes stuff gets lost in translation or never gets
+          translated at all.
+        </p>
+        <p>
+          For example, one of the best parts of my job as a full stack developer
+          at
+          <a href="http://wespire.com/">WeSpire</a> is giving and receiving code
+          review. It's an incredible opportunity to learn from others, to share
+          best practices, to collaborate on different ideas and and approaches,
+          to improve the product, and to champion the accomplishments and
+          success of your coworkers. I can hear some of you at home (I've moved
+          my audience goal post from one stranger to *gasp* multiple strangers,
+          and the first blog post ink hasn't even dried yet! Ambitious.) are
+          wondering if all that should really be within the purview of code
+          review and, OK, that's fair. But the point is that communicating
+          effectively is such a crucial part of being a good developer, and
+          until now only a very small amount of people have gotten to see or
+          hear me do that.
+        </p>
+        <p>
+          If you, potential employer or coworker of the future, want to know how
+          I think, how I express myself, or what I'm curious about, then I want
+          this to be a good place to start. Hopefully you'll find my writing to
+          be a more engaging and accurate representation of my work than the
+          outcome of an arbitrary whiteboard algorithm session. I mean, those
+          are totally fine for people that enjoy or excel at them but I'm not
+          one of them.
+        </p> -->
+        <hr />
+        <!-- <p>
+          I've already written way more than I expected to for my first post. If
+          I get all my great ideas out now, I'll have nothing left to write
+          about and this will have a been a fun but very short experiment.
+        </p>
+        <p>
+          Stay tuned for the next positively scintillating post, which may or
+          may not discuss:
+        </p>
+        <ul>
+          <li>
+            Updating my portfolio site w/ all the latest best practices and
+            technologies
+          </li>
+          <li>
+            Some advice that's helped me on my journey from junior to senior
+            developer
+          </li>
+          <li>My obsession with grouping things in sets of three</li>
+        </ul>
+        <p><i>Wondering if I need to sign my blog posts,</i></p> -->
+        <p>- Monim</p>
+        <!--<p>P.S. I love my cat.</p>
+        <p>
+          P.P.S. My girlfriend/editor wrote that last P.S. But she's not wrong!
+          😆🐈❤️
+        </p> -->
+      </article>
+    </main>
+  </body>
+</html>
