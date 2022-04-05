@@ -819,7 +819,11 @@
 
     <footer class="page-title white-text teal">
         <div id="foot">
-          #2021
+          <script>
+                const d = new Date();
+                let year = d.getFullYear();
+                document.write("#"+year);
+          </script>
         </div>
     </footer>
 
