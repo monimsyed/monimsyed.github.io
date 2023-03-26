@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://monim003.github.io/sitemap.xml
+Sitemap: https://monimsyed.github.io/sitemap.xml
