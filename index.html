@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- Materialize - Compiled and minified CSS-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+<!--     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
     <!-- Font Awesome Icon - CSS-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -837,15 +837,29 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
       // Materialize - Initializers
-      $(document).ready(function() {
-        $(".scrollspy").scrollSpy();
+//       $(document).ready(function() {
+//         $(".scrollspy").scrollSpy();
+//         // Initialize collapse button
+//         $(".button-collapse").sideNav({
+//           menuWidth: 190, // Default is 240
+//           edge: "left", // Choose the horizontal origin
+//           closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+//         });
+//       });
+      // Materialize - Initializers
+      document.addEventListener("DOMContentLoaded", function() {
+        var scrollspy = document.querySelectorAll(".scrollspy");
+        M.ScrollSpy.init(scrollspy);
+
         // Initialize collapse button
-        $(".button-collapse").sideNav({
-          menuWidth: 190, // Default is 240
-          edge: "left", // Choose the horizontal origin
-          closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+        var buttonCollapse = document.querySelectorAll(".button-collapse");
+        M.Sidenav.init(buttonCollapse, {
+          menuWidth: 190,
+          edge: "left",
+          closeOnClick: true
         });
       });
+
     </script>
 
     <script type="application/ld+json">
