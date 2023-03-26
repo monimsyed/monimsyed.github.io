@@ -1,33 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-<!--     <meta http-equiv="refresh" content="0; URL=''" /> -->
+    <meta http-equiv="refresh" content="0; URL=''" />
   </head>
   <body>
     Redirecting to resume...
-    <script>
-      // create a new XMLHttpRequest object
-      var xhr = new XMLHttpRequest();
-
-      // specify the request method, URL, and asynchronous flag
-      xhr.open('GET', 'https://project-vefo.42web.io/api.php', true);
-
-      // define a callback function to handle the response
-      xhr.onload = function() {
-        if (this.status === 200) {
-          // the request was successful, so parse the response data
-          var data = JSON.parse(this.responseText);
-          console.log(data);
-        } else {
-          // the request failed, so log the error message
-          console.error('Request failed. Status:', this.status);
-        }
-      };
-
-      // send the request
-      xhr.send();
-
-      
-    </script>
   </body>
 </html>
