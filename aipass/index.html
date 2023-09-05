@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Password Manager</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Password Manager</h1>
+        <label for="length">Password Length:</label>
+        <input type="number" id="length" min="0" max="2048" value="16">
+        <br><br>
+        <label for="includeLetters">Include Letters (a-z A-Z):</label>
+        <input type="checkbox" id="includeLetters" checked>
+        <br>
+        <label for="includeNumbers">Include Numbers:</label>
+        <input type="checkbox" id="includeNumbers" checked>
+        <br>
+        <label for="includeSymbols">Include Symbols:</label>
+        <input type="checkbox" id="includeSymbols" checked>
+        <br>
+        <label for="includeSpaces">Include Spaces:</label>
+        <input type="checkbox" id="includeSpaces">
+        <br>
+        <label for="includeMinus">Include Minus:</label>
+        <input type="checkbox" id="includeMinus">
+        <br>
+        <label for="includeUnderscore">Include Underscore:</label>
+        <input type="checkbox" id="includeUnderscore">
+        <br><br>
+        <button id="generate">Generate Password</button>
+        <br><br>
+        <label for="password">Generated Password:</label>
+        <input type="text" id="password" readonly>
+        <button id="copy">Copy</button>
+    </div>
+    
+    <script>
+        document.getElementById("generate").addEventListener("click", function() {
+            var length = document.getElementById("length").value;
+            var includeLetters = document.getElementById("includeLetters").checked;
+            var includeNumbers = document.getElementById("includeNumbers").checked;
+            var includeSymbols = document.getElementById("includeSymbols").checked;
+            var includeSpaces = document.getElementById("includeSpaces").checked;
+            var includeMinus = document.getElementById("includeMinus").checked;
+            var includeUnderscore = document.getElementById("includeUnderscore").checked;
+
+            if (!length || length < 1) {
+                // If password length is empty or 0, set defaults
+                length = 16;
+                document.getElementById("length").value = length;
+                includeLetters = true;
+                includeNumbers = true;
+                includeSymbols = true;
+                document.getElementById("includeLetters").checked = true;
+                document.getElementById("includeNumbers").checked = true;
+                document.getElementById("includeSymbols").checked = true;
+            }
+
+            var charset = "";
+            if (includeLetters) charset += "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            if (includeNumbers) charset += "0123456789";
+            if (includeSymbols) charset += "!@#$%^&*()_+[]{}|;':,.<>?";
+            if (includeSpaces) charset += " ";
+            if (includeMinus) charset += "-";
+            if (includeUnderscore) charset += "_";
+
+            var password = generatePassword(length, charset);
+            document.getElementById("password").value = password;
+        });
+
+        document.getElementById("copy").addEventListener("click", function() {
+            var passwordField = document.getElementById("password");
+            passwordField.select();
+            document.execCommand("copy");
+        });
+
+        function generatePassword(length, charset) {
+            var password = "";
+            for (var i = 0; i < length; i++) {
+                var randomIndex = Math.floor(Math.random() * charset.length);
+                password += charset.charAt(randomIndex);
+            }
+            return password;
+        }
+    </script>
+</body>
+</html>
